@@ -1,0 +1,240 @@
+/* HOME PAGE CSS
+*/
+
+.home_main {
+  width: 100%;
+  margin: 20px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.home_text {
+  width: 45%;
+  margin-right: 1rem;
+  text-align: end;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home_h2 {
+  font-size: 4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home_image {
+  width: 30%;
+}
+.homepage_image {
+  width: 100%;
+}
+
+/* ABOUT PAGE CSS
+*/
+.about_main_container {
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about_text {
+  width: 55%;
+  text-align: justify;
+  margin: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about_image {
+  width: 35%;
+}
+.aboutpage_image {
+  width: 100%;
+}
+/* SERVICES PAGE CSS
+*/
+.services_main {
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.services_text {
+  text-align: justify;
+  margin: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.services_image {
+  margin: 1rem;
+  align-self: center;
+}
+/*PROJECTS PAGE CSS
+*/
+.projects_main {
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.projects_text {
+  text-align: justify;
+  margin: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.projects_images {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.project1 {
+  display: flex;
+  width: 100%;
+  padding: 0.1rem 0.1rem 0.1rem 0;
+  flex-direction: row;
+}
+
+.project1image_container {
+  width: 65%;
+  padding: 0.1rem 0.1rem 0.1rem 0;
+  align-self: flex-start;
+}
+.project1_image {
+  width: 100%;
+}
+.project_description {
+  width: 30%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  align-self: flex-start;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #283618;
+}
+.project_heading {
+  text-align: center;
+  color: #fefae0;
+}
+.project_text {
+  text-align: justify;
+  color: #fefae0;
+}
+
+.project2 {
+  display: flex;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+  flex-direction: row;
+}
+
+.project2image_container {
+  width: 65%;
+  padding: 0.1rem 0.1rem 0.1rem 0;
+  align-self: flex-start;
+}
+.project2_image {
+  width: 100%;
+}
+
+.project3 {
+  display: flex;
+  width: 100%;
+  padding: 0.1rem 0.1rem 0.1rem 0;
+  flex-direction: row;
+}
+
+.project3image_container {
+  width: 65%;
+  padding: 0.1rem 0.1rem 0.1rem 0;
+  align-self: flex-start;
+}
+.project3_image {
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+
+/* CONTACT PAGE CSS
+*/
+.contact_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_row1 {
+  width: 100%;
+  font-size: 1rem;
+}
+.contact_text {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contact_row2 {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_form {
+  width: 40%;
+  padding: 1rem;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #283618;
+  color: #fefae0;
+}
+input {
+  margin: 1rem;
+  width: 70%;
+  background-color: #283618;
+  color: #fefae0;
+}
+.contact_btn {
+  width: auto;
+  background-color: #fefae0;
+  color: #283618;
+  border-radius: 1rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 1rem;
+}
+
+.contact_image {
+  width: 35%;
+}
+.contactpage_image {
+  width: 100%;
+}
+.contact_row3 button {
+  border: none;
+  background-color: white;
+  margin: 0 2rem;
+}
+#project1Modal {
+  visibility: hidden;
+}
+#project1:hover + #project1Modal {
+  visibility: visible;
+}
+#project2Modal {
+  visibility: hidden;
+}
+#project2:hover + #project2Modal {
+  visibility: visible;
+}
+#project3Modal {
+  visibility: hidden;
+}
+#project3:hover + #project3Modal {
+  visibility: visible;
+}
