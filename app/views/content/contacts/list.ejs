@@ -1,6 +1,7 @@
 <div class="container">
     <h1>Business Contact List</h1>
-
+    <a href="/contact-add" class="btn btn-primary" role="button" ><i class="fas fa-plus-circle" ></i>Add Contact</a>
+<hr>
     <div class="row">
         <div class="col">
 
@@ -11,6 +12,8 @@
                         <th scope="col">NAME</th>
                         <th scope="col">CONTACT NUMBER</th>
                         <th scope="col">EMAIL ADDRESS</th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="contactList">
@@ -18,9 +21,12 @@
                     <% for (let count = 0; count < contacts.length; count++){ %>
                         <tr>
                             <th scope="col" class="text-center"><%= count + 1 %></th>
-                            <th><%= contacts[count].name%></th>
-                            <th><%= contacts[count].contact%></th>
-                            <th><%= contacts[count].email%></th>
+                            <td><%= contacts[count].name%></td>
+                            <td><%= contacts[count].contact%></td>
+                            <td><%= contacts[count].email%></td>
+                            <td class="text-center col-1" ><a href="/contact-edit/<%= contacts[count]._id %>" class="btn btn-primary btn-sm"><i class="fas fa-pencil-alt" ></i>Edit</a></td>
+                            <td class="text-center col-1" ><a href="/contact-delete/<%= contacts[count]._id %>" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt" ></i>Delete</a></td>
+
                         </tr>
                     <%  } %>
                 </tbody>

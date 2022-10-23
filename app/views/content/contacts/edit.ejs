@@ -4,6 +4,7 @@
             <h1><%= title %></h1>
 
             <form class="form" method="POST">
+                <input type="hidden" name="id" value="<%= contact._id %>">
                 <div class="form-group">
                     <label for="nameTextField">Contact Name</label>
                     <input type="text" class="form-control" id="nameTextField" placeholder="Please enter your name..."
@@ -24,7 +25,7 @@
 
                 <button class="btn btn-primary" type="submit"><i class= "fas fa-edit"></i>SUBMIT</button>
 
-                <a href="/contacts/list" class="btn btn-warning"><i class="fas fa-undo"></i>CANCEL</a>
+                <a href="/contact-list" class="btn btn-warning"><i class="fas fa-undo"></i>CANCEL</a>
 
             </form>
         </div>
