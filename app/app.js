@@ -18,6 +18,7 @@ import { Secret, MongoURI } from "../config/config.js";
 
 // Import Router
 import indexRouter from "./routes/index.route.server.js";
+import contactRouter from "./routes/contacts.route.server.js";
 
 //instantiate app server
 const app = express();
@@ -49,5 +50,5 @@ app.use(
 
 // Use Routes
 app.use("/", indexRouter);
-
+app.use("/",contactRouter);
 export default app;
